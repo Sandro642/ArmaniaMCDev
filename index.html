@@ -47,7 +47,27 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">Accueil</a></li>
+          <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LeRxvkgAAAAAI6cBFKQSls5jSD9BOfC9pykr2hK', {action: 'submit'}).then(function(token) {
+              <li class="active"><a href="index.html">Accueil</a></li>
+          });
+        });
+      }
+  </script>
+          <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LeRxvkgAAAAAI6cBFKQSls5jSD9BOfC9pykr2hK', {action: 'submit'}).then(function(token) {
+              <li><a href="about.html">En Savoir Plus</a></li>
+          });
+        });
+      }
+  </script>
+          
           <li><a href="about.html">En Savoir Plus</a></li>
           <li><a href="works.html" class="smoothscroll">Notre Travail</a></li>
           <li><a href="https://forms.gle/m3K9unzTbvRrTh2S7" class="smoothscroll">Recrutement Dev</a></li>
@@ -108,16 +128,7 @@
   
   <script src="https://www.google.com/recaptcha/api.js?render=6LeRxvkgAAAAAI6cBFKQSls5jSD9BOfC9pykr2hK"></script>
   
-     <script>
-      function onClick(e) {
-        e.preventDefault();
-        grecaptcha.ready(function() {
-          grecaptcha.execute('6LeRxvkgAAAAAI6cBFKQSls5jSD9BOfC9pykr2hK', {action: 'submit'}).then(function(token) {
-              // Add your logic to submit to your backend server here.
-          });
-        });
-      }
-  </script>
+     
 
 </body>
 </html>
